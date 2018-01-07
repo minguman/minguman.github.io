@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://ueder.cn/20180101/nuxt-h5/index.html">
 <meta property="og:site_name" content="老左的个人BLOG">
 <meta property="og:description" content="产品说明产品需求：兼容SEO，前后端分离开发周期：3周参与人数：4人线上地址：github：https://github.com/minguman/nuxt-express-demo">
-<meta property="og:updated_time" content="2018-01-01T13:52:45.000Z">
+<meta property="og:updated_time" content="2018-01-05T06:35:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="婚芭莎H5（基于Vue的SSR方案）">
 <meta name="twitter:description" content="产品说明产品需求：兼容SEO，前后端分离开发周期：3周参与人数：4人线上地址：github：https://github.com/minguman/nuxt-express-demo">
@@ -165,17 +165,24 @@
 <h2 id="产品需求"><a href="#产品需求" class="headerlink" title="产品需求"></a>产品需求</h2><ol>
 <li>前后端分离（业务不重复）</li>
 <li>兼容SEO (服务端渲染)</li>
-<li>使用Vue框架 （前端框架）</li>
 </ol>
-<p>基于以上3点，选择了基于VueSSR的nuxtjs框架；</p>
+<h2 id="技术方案"><a href="#技术方案" class="headerlink" title="技术方案"></a>技术方案</h2><p>基于Vue的SSR方案</p>
+<ol>
+<li>在这次项目之前便在公司里推过Vue框架，部分同事已有过vue的开发经验，并且Vue的第三方ui库还蛮丰富、成熟的、不需要额外在花大量人力开发维护一套UI库；</li>
+<li>前半年前后端没有分离的时候，前后端在合作上面存在大量沟通、重复返工的高成本；为了尽可能杜绝这种低效的开发模式，在经过多方协商后，决定使用Node来做一个中间层；<br>基于以上考虑便选择了Vue+SSR的技术方案，这又是一次大胆的尝试；</li>
+</ol>
 <h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ul>
 <li>vue (Vuejs)</li>
 <li>vuex (vue组件状态管理)</li>
+<li>vue-router (vue路由管理)</li>
+<li>webpack (构建工具)</li>
+<li>gulp (构建工具)</li>
 <li>nuxtjs （VueSSR框架）</li>
 <li>express（node框架）</li>
 <li>axios （客户端和服务端异步请求）</li>
 <li>mint-ui (第三方ui库)</li>
 <li>log4js （日志管理）</li>
+<li>redis （轻便缓存）</li>
 </ul>
 
       
@@ -248,6 +255,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/20180106/vc/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          左继权的个人简历
+        
+      </div>
+    </a>
   
   
     <a href="/20180101/dmp-ad-center/" id="article-nav-older" class="article-nav-link-wrap">
@@ -381,6 +397,14 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">用户中心</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">老左</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">简历</a>
               </li>
             
             <div class="clearfix"></div>
