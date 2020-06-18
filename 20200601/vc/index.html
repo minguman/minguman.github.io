@@ -16,10 +16,11 @@
 <meta property="og:site_name" content="老左的个人BLOG">
 <meta property="og:description" content="姓名：左继权性别：男星座：射手座职业：高级前端开发工程师邮箱：laozuo957@aliyun.com一句话自述：“一个不安于现状并勇于追求理想的年轻人”Github: https://github.com/mingumanBlog: http://zuojiquan.com">
 <meta property="og:image" content="http://zuojiquan.com/images/netroompms.png">
+<meta property="og:image" content="http://zuojiquan.com/images/netroom.png">
 <meta property="og:image" content="http://zuojiquan.com/images/hunbasha_h5.png">
 <meta property="og:image" content="http://zuojiquan.com/images/jiabasha_mobile.jpg">
 <meta property="og:image" content="http://zuojiquan.com/images/seller_center.jpg">
-<meta property="og:updated_time" content="2020-06-16T17:07:43.649Z">
+<meta property="og:updated_time" content="2020-06-18T06:03:08.932Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="左继权的个人简历">
 <meta name="twitter:description" content="姓名：左继权性别：男星座：射手座职业：高级前端开发工程师邮箱：laozuo957@aliyun.com一句话自述：“一个不安于现状并勇于追求理想的年轻人”Github: https://github.com/mingumanBlog: http://zuojiquan.com">
@@ -167,7 +168,7 @@
 <li>工作职责和范围</li>
 </ul>
 <blockquote>
-<p>负责公司网约房系列产品前端开发工作<br>并参与部分产品的demo设计、UI设计（由于公司业务需要小步快跑、快速迭代、前端人员在早期产品设计时就介入讨论有助于明确产品功能和技术方案、提高工作效率）<br>公司所有web前端业务都使用了nodejs搭建web服务，用于数据接口转发。</p>
+<p>负责公司网约房系列产品前端开发工作<br>并参与部分产品的demo设计、UI设计（由于公司业务需要小步快跑、快速迭代、前端人员在早期产品设计时就介入讨论有助于明确产品功能和技术方案、提高工作效率）<br>公司所有web前端业务都使用了nodejs搭建web服务的技术方案，除了数据接口的其他业务，尽可能在Node处理完成并返回给前端（用户）。</p>
 </blockquote>
 <ul>
 <li>其中参与团队设计、研发的产品包含（不分先后顺序）：</li>
@@ -189,14 +190,26 @@
 <li>技术栈：</li>
 </ul>
 <blockquote>
-<p>web服务使用了Koa2框架<br>视图层使用了Vue的SPA方案<br>数据层使用java服务，Web服务只用着接口的转发（部分数据处理）及文件上传、下载、Excel生成。<br>redis做数据缓存（地区数据、字典）<br>pm2做Node应用管理、监控<br>log4js做Node应用日志管理<br>gitlab做项目代码管理<br>jenkens做集成发布<br>nginx做代理转发、负载均衡</p>
+<p>视图层使用了Vue的SPA方案<br>服务层（控制层）使用了Koa2框架<br>数据层使用java服务，Web服务只用着接口的转发（部分数据处理）及文件上传、下载、Excel生成。<br>用户登录也在Web服务层处理，使用了jwt方案<br>sass做css编译<br>redis做数据缓存（地区数据、字典）<br>pm2做Node应用管理、监控<br>log4js做Node应用日志管理<br>gitlab做项目代码管理<br>sourceTree做管理、规范git分支<br>jenkens做集成发布<br>nginx做代理转发、负载均衡</p>
 </blockquote>
-<ul>
-<li>该项目碰到的技术难点<blockquote>
+<p>线上地址：<a href="https://pms.seedien.com/" target="_blank" rel="noopener">https://pms.seedien.com/</a></p>
+<h3 id="悉点科技-网约房房源审核平台（Node-Vue）"><a href="#悉点科技-网约房房源审核平台（Node-Vue）" class="headerlink" title="悉点科技 - 网约房房源审核平台（Node + Vue）"></a>悉点科技 - 网约房房源审核平台（Node + Vue）</h3><ul>
+<li>业务需求：<blockquote>
+<p>1.前后端分离<br>2.SPA</p>
 </blockquote>
 </li>
 </ul>
-<p>线上地址：<a href="https://pms.seedien.com/" target="_blank" rel="noopener">https://pms.seedien.com/</a></p>
+<p>基于以上3点，选择了koa2 + vue 开发方式，koa2搭建web服务，vue负责前端业务。</p>
+<ul>
+<li>产品UI<br><img src="/images/netroom.png" alt=""></li>
+</ul>
+<ul>
+<li>技术栈：</li>
+</ul>
+<blockquote>
+<p>视图层使用了Vue的SPA方案<br>服务层（控制层）使用了Koa2框架<br>数据层使用java服务，Web服务只用着接口的转发（部分数据处理）及文件上传、下载、Excel生成。<br>用户登录也在Web服务层处理，使用了jwt方案<br>sass做css编译<br>redis做数据缓存（地区数据、字典）<br>pm2做Node应用管理、监控<br>log4js做Node应用日志管理<br>gitlab做项目代码管理<br>sourceTree做管理、规范git分支<br>jenkens做集成发布<br>nginx做代理转发、负载均衡</p>
+</blockquote>
+<p>线上地址：<a href="https://checkin.seedien.com/" target="_blank" rel="noopener">https://checkin.seedien.com/</a></p>
 <h2 id="中国婚博会（2017-03-2018-11）"><a href="#中国婚博会（2017-03-2018-11）" class="headerlink" title="中国婚博会（2017.03 - 2018.11）"></a>中国婚博会（2017.03 - 2018.11）</h2><ul>
 <li>工作职责和范围</li>
 </ul>
@@ -526,6 +539,15 @@
   
 <nav id="article-nav">
   
+    <a href="/20200601/vc的副本/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          左继权的个人简历
+        
+      </div>
+    </a>
+  
   
     <a href="/20190815/xdian-netroom-pms/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">网约房房源管理系统（基于Node + Vue）</div>
@@ -657,6 +679,10 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">用户中心</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
@@ -665,19 +691,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">用户中心</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">旅宿</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">老左</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">简历</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -686,6 +700,14 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">网约房</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">老左</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">简历</a>
               </li>
             
             <div class="clearfix"></div>
