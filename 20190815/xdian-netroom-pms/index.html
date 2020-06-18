@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="老左的个人BLOG">
 <meta property="og:description" content="项目说明该项目用于房东添加房源、管理房源、智能设备管理等开发周期：长期参与人数：2人线上地址：https://pms.seedien.com 我的责任负责该项目的前端开发工作，其中包含：“原型评审、UI评审、前端开发（技术架构、方案、估时等）、测试、发布”。 产品图片">
 <meta property="og:image" content="http://zuojiquan.com/images/netroompms.png">
-<meta property="og:updated_time" content="2020-06-18T05:27:32.396Z">
+<meta property="og:updated_time" content="2020-06-18T05:53:50.843Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网约房房源管理系统（基于Node + Vue）">
 <meta name="twitter:description" content="项目说明该项目用于房东添加房源、管理房源、智能设备管理等开发周期：长期参与人数：2人线上地址：https://pms.seedien.com 我的责任负责该项目的前端开发工作，其中包含：“原型评审、UI评审、前端开发（技术架构、方案、估时等）、测试、发布”。 产品图片">
@@ -160,15 +160,17 @@
 <h2 id="我的责任"><a href="#我的责任" class="headerlink" title="我的责任"></a>我的责任</h2><p>负责该项目的前端开发工作，其中包含：“原型评审、UI评审、前端开发（技术架构、方案、估时等）、测试、发布”。</p>
 <h2 id="产品图片"><a href="#产品图片" class="headerlink" title="产品图片"></a>产品图片</h2><p><img src="/images/netroompms.png" alt="Alt text"></p>
 <a id="more"></a>
-<h2 id="技术方案"><a href="#技术方案" class="headerlink" title="技术方案"></a>技术方案</h2><p>基于<code>Nodejs</code>的Web应用服务，主要用于数据接口转发、数据处理。</p>
+<h2 id="技术方案"><a href="#技术方案" class="headerlink" title="技术方案"></a>技术方案</h2><p>基于<code>Nodejs</code>的Web应用服务，主要用于数据接口转发、数据二次处理，部分服务端业务将在Node层处理并返给前端。大大降低了前后端沟通成本，以及协作成本。</p>
 <h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ul>
 <li>视图层使用了Vue的SPA方案</li>
 <li>服务层（控制层）使用了Koa2框架</li>
 <li>数据层使用java服务，Web服务只用着接口的转发（部分数据处理）及文件上传、下载、Excel生成。</li>
 <li>用户登录也在Web服务层处理，使用了jwt方案</li>
+<li>sass做css编译</li>
 <li>redis做数据缓存（地区数据、字典）</li>
 <li>echarts做首页数据展示</li>
 <li>pm2做Node应用管理、监控</li>
+<li>sass做css编译</li>
 <li>log4js做Node应用日志管理</li>
 <li>gitlab做项目代码管理</li>
 <li>jenkens做集成发布</li>
@@ -405,10 +407,6 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">用户中心</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
@@ -417,15 +415,11 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">用户中心</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">旅宿</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">网约房</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">微信小程序</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -434,6 +428,14 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">简历</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">微信小程序</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">网约房</a>
               </li>
             
             <div class="clearfix"></div>
