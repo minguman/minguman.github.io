@@ -6,21 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://zuojiquan.com">
-  <title>网约房房源审核系统（基于Node + Vue） | 老左的个人BLOG</title>
+  <title>Archives: 2019/8 | 老左的个人BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="项目说明该项目用于房东的房源、硬件设备（门锁、门磁、猫眼）、租客的管理。房源验真小程序数据接口转发开发周期：长期参与人数：1人线上地址：https://checkin.seedien.com 产品图片">
-<meta name="keywords" content="vue,node">
-<meta property="og:type" content="article">
-<meta property="og:title" content="网约房房源审核系统（基于Node + Vue）">
-<meta property="og:url" content="http://zuojiquan.com/20181210/xidian-netroom/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="老左的个人BLOG">
+<meta property="og:url" content="http://zuojiquan.com/archives/2019/08/index.html">
 <meta property="og:site_name" content="老左的个人BLOG">
-<meta property="og:description" content="项目说明该项目用于房东的房源、硬件设备（门锁、门磁、猫眼）、租客的管理。房源验真小程序数据接口转发开发周期：长期参与人数：1人线上地址：https://checkin.seedien.com 产品图片">
-<meta property="og:image" content="http://zuojiquan.com/images/netroom.png">
-<meta property="og:updated_time" content="2020-06-17T14:29:03.138Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="网约房房源审核系统（基于Node + Vue）">
-<meta name="twitter:description" content="项目说明该项目用于房东的房源、硬件设备（门锁、门磁、猫眼）、租客的管理。房源验真小程序数据接口转发开发周期：长期参与人数：1人线上地址：https://checkin.seedien.com 产品图片">
-<meta name="twitter:image" content="http://zuojiquan.com/images/netroom.png">
+<meta name="twitter:title" content="老左的个人BLOG">
   
     <link rel="alternative" href="/atom.xml" title="老左的个人BLOG" type="application/atom+xml">
   
@@ -131,14 +124,31 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-xidian-netroom" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      网约房房源审核系统（基于Node + Vue）
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/20190815/xdian-netroom-pms/" class="archive-article-date">
+  	<time datetime="2019-08-15T10:25:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-15</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/20190815/xdian-netroom-pms/">网约房房源管理系统（基于Node + Vue）</a>
     </h1>
   
         
@@ -147,43 +157,8 @@
       </p>
       
 
-        
-        <a href="/20181210/xidian-netroom/" class="archive-article-date">
-  	<time datetime="2018-12-10T10:25:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="项目说明"><a href="#项目说明" class="headerlink" title="项目说明"></a>项目说明</h2><p>该项目用于房东的房源、硬件设备（门锁、门磁、猫眼）、租客的管理。<br>房源验真小程序数据接口转发<br>开发周期：长期<br>参与人数：1人<br>线上地址：<a href="https://checkin.seedien.com" target="_blank" rel="noopener">https://checkin.seedien.com</a></p>
-<h2 id="产品图片"><a href="#产品图片" class="headerlink" title="产品图片"></a>产品图片</h2><p><img src="/images/netroom.png" alt="Alt text"></p>
-<a id="more"></a>
-<h2 id="技术方案"><a href="#技术方案" class="headerlink" title="技术方案"></a>技术方案</h2><p>基于<code>Nodejs</code>的Web应用服务，主要用于数据接口转发、数据处理。</p>
-<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ul>
-<li>视图层使用了Vue的SPA方案</li>
-<li>服务层（控制层）使用了Koa2框架</li>
-<li>数据层使用java服务，Web服务只用着接口的转发（部分数据处理）及文件上传、下载、Excel生成。</li>
-<li>用户登录也在Web服务层处理，使用了jwt方案</li>
-<li>redis做数据缓存（地区数据、字典）</li>
-<li>pm2做Node应用管理、监控</li>
-<li>log4js做Node应用日志管理</li>
-<li>gitlab做项目代码管理</li>
-<li>jenkens做集成发布</li>
-<li>nginx做代理转发、负载均衡</li>
-<li>ecs 测试环境(1台服务器)、预发环境（1台服务器）、线上环境（2台服务器）</li>
-</ul>
-<h2 id="项目中遇到了哪些问题？"><a href="#项目中遇到了哪些问题？" class="headerlink" title="项目中遇到了哪些问题？"></a>项目中遇到了哪些问题？</h2><ol>
-<li>在使用git且多人协作时，如何避免冲突？我们遇到了哪些问题？</li>
-</ol>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -199,119 +174,21 @@
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://zuojiquan.com/20181210/xidian-netroom/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/20190215/xdian-netroom-pms/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          网约房房源管理系统（基于Node + Vue）
-        
-      </div>
-    </a>
   
   
-    <a href="/20180101/nuxt-h5/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">婚芭莎H5（基于Vue的SSR方案）</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
+    
 
-  
 
-  
-
-        <!-- 目录内容 -->
-             
-        <!-- 目录内容结束 -->
           </div>
         </div>
       </div>
@@ -332,8 +209,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
@@ -403,6 +280,10 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">用户中心</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
@@ -412,10 +293,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">旅宿</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">用户中心</a>
               </li>
              
               <li class="article-tag-list-item">
