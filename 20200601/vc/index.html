@@ -20,7 +20,7 @@
 <meta property="og:image" content="http://zuojiquan.com/images/hunbasha_h5.png">
 <meta property="og:image" content="http://zuojiquan.com/images/jiabasha_mobile.jpg">
 <meta property="og:image" content="http://zuojiquan.com/images/seller_center.jpg">
-<meta property="og:updated_time" content="2020-07-16T10:26:49.927Z">
+<meta property="og:updated_time" content="2020-07-16T10:46:28.777Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="左继权的个人简历">
 <meta name="twitter:description" content="姓名：左继权性别：男星座：射手座职业：高级前端开发工程师邮箱：laozuo957@aliyun.com电话：18857131323一句话自述：“一个不安于现状并勇于追求理想的年轻人”Github： https://github.com/mingumanBlog： http://zuojiquan.com出生日期：1986-11毕业院校： 江西科技学院">
@@ -201,6 +201,16 @@
 <blockquote>
 <p>视图层使用了Vue的SPA方案<br>web服务（网关或代理）使用了Koa2框架<br>web服务只用着数据接口的转发（代理）及文件上传、下载、Excel生成。<br>用户登录也在web服务层处理，使用了jwt方案<br>sass做css编译<br>redis做数据缓存（地区数据、字典）<br>pm2做Node应用管理、监控<br>log4js做Node应用日志管理<br>gitlab做项目代码管理<br>sourceTree做管理、规范git分支<br>jenkens做集成发布<br>nginx做代理转发、负载均衡</p>
 </blockquote>
+<h2 id="其中遇到的问题有"><a href="#其中遇到的问题有" class="headerlink" title="其中遇到的问题有"></a>其中遇到的问题有</h2><ul>
+<li>问题1：“多人协作下，出现代码风格不统一，读写困难”<br>解决方案：制定代码规范，使用Eslint来强行校验代码格式，确保代码风格统一，避免代码格式上的错误。</li>
+<li>问题2：“多人协作下，代码版本管理混乱，容易引发冲突、甚至分支被删除的情况”<br>解决方案：制定代码版本规范，使用gitflow来规范管理，大大降低了代码冲突，分支管理混乱的情况</li>
+<li>问题3：“前后端并行开发，需要等待后端提供数据接口，会阻塞前端开发进度”<br>解决方案：“使用mockjs模拟数据，无须等待便可继续完成前端业务”</li>
+<li>问题4：“后端提供的接口字段格式不统一，导致前端需要反复查看每一个接口的字段格式”<br>解决方案：“由于后端业务不在自己的工作范围，逐向主管反馈该情况后，有所改善”</li>
+</ul>
+<h2 id="项目中有待改进的："><a href="#项目中有待改进的：" class="headerlink" title="项目中有待改进的："></a>项目中有待改进的：</h2><ol>
+<li>单元测试，由于项目采用快速迭代的开发方式，在单元测试上面没有过多投入，</li>
+<li>前端监控与报警，虽然使用了pm2和log4js，但这2个框架都是用于服务端监控的，前端监控该如何开展？</li>
+</ol>
 <p>线上地址：<a href="https://pms.seedien.com/" target="_blank" rel="noopener">https://pms.seedien.com/</a></p>
 <h3 id="悉点科技-网约房房源审核平台（Node-Vue）"><a href="#悉点科技-网约房房源审核平台（Node-Vue）" class="headerlink" title="悉点科技 - 网约房房源审核平台（Node + Vue）"></a>悉点科技 - 网约房房源审核平台（Node + Vue）</h3><ul>
 <li>业务需求：<blockquote>
@@ -697,15 +707,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">用户中心</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">node</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">用户中心</a>
               </li>
              
               <li class="article-tag-list-item">
