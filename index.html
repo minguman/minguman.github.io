@@ -126,6 +126,97 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-sort" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/20200708/sort/">冒泡排序</a>
+    </h1>
+  
+        
+      <p class="article-desc">
+        排序算法中速度较慢的方法，时间复杂度为O(n2)
+      </p>
+      
+
+        
+        <a href="/20200708/sort/" class="archive-article-date">
+  	<time datetime="2020-07-08T10:25:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="冒泡排序说明"><a href="#冒泡排序说明" class="headerlink" title="冒泡排序说明"></a>冒泡排序说明</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//对数组内的数字进行从小到大的方式排序</span><br><span class="line">var arr = [8, 4, 2, 7, 5]  </span><br><span class="line"></span><br><span class="line">结果：[2, 4, 5, 7, 8]</span><br></pre></td></tr></table></figure>
+<p>冒泡排序的原理，从数组前面开始，两两依次对比，左面如果比右面大，就互换位置，依次完成，最终得到1个从小到大依次排序的结果。</p>
+<h2 id="图解冒泡排序"><a href="#图解冒泡排序" class="headerlink" title="图解冒泡排序"></a>图解冒泡排序</h2><p><img src="https://mmbiz.qpic.cn/mmbiz_gif/D67peceibeISwc3aGibUlvZ0XqVnbWtBRiaC1S2jpXRzXcZVn0aP6BYnkO2FJicNstxicHmf9wMIic5FV0I75ptv5jYA/640?wx_fmt=gif&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt="img"></p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">var arr = [20, 5, 10, 3, 8]</span><br><span class="line">function sort (list) &#123;</span><br><span class="line">	var listLen = list.length</span><br><span class="line">	var count = 0</span><br><span class="line">	for (let i = 0; i &lt; listLen; i++) &#123;</span><br><span class="line"></span><br><span class="line">		for (let j = 0; j &lt; listLen - 1 - i; j++) &#123;  </span><br><span class="line">		// 减1（每次外循环都会有1个最大值被移动到最后，因此内循环中的最后1位不需要再做比较，）</span><br><span class="line">		// 减i（每次外循环都会有1个最大值被移动到最后，内循环只需要根据外循环所剩的次数就行循环就好）</span><br><span class="line">			if (list[j] &gt; list[j + 1]) &#123; //比较相邻2个元素，如果左面大于右面，相互交换</span><br><span class="line">				let num = list[j]      // 把左面的值保存下来</span><br><span class="line">				list[j] = list[j + 1]  // 把左面的值替换为右面的值</span><br><span class="line">				list[j + 1] = num      // 把右面的值替换为左面的值</span><br><span class="line">			&#125;</span><br><span class="line">			console.log(&apos;一共循环了几次&apos;, count += 1) // 10次</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">	return list</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sort(list)</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">排序</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">冒泡排序</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/20200708/sort/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+        <!-- 目录内容 -->
+             
+        <!-- 目录内容结束 -->
+  
     <article id="post-vc" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -895,98 +986,6 @@
              
         <!-- 目录内容结束 -->
   
-    <article id="post-jiabasha-mobile" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/20180101/jiabasha-mobile/">家芭莎H5版</a>
-    </h1>
-  
-        
-      <p class="article-desc">
-        北京金海群英网络信息技术有限公司
-      </p>
-      
-
-        
-        <a href="/20180101/jiabasha-mobile/" class="archive-article-date">
-  	<time datetime="2018-01-01T08:06:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="项目说明"><a href="#项目说明" class="headerlink" title="项目说明"></a>项目说明</h2><p>项目周期：1个月<br>参与人数：3人<br>线上地址：<a href="https://sh.jiabasha.com/m/" target="_blank" rel="noopener">https://sh.jiabasha.com/m/</a></p>
-<h2 id="产品图片"><a href="#产品图片" class="headerlink" title="产品图片"></a>产品图片</h2><p><img src="/images/jiabasha_mobile.jpg" alt="Alt text"></p>
-        
-          <a class="article-more-a" href="/20180101/jiabasha-mobile/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">中国婚博会</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">家芭莎</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">h5</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/20180101/jiabasha-mobile/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-        <!-- 目录内容 -->
-             
-        <!-- 目录内容结束 -->
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1085,6 +1084,10 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">用户中心</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
@@ -1093,7 +1096,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">用户中心</a>
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">排序</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">冒泡排序</a>
               </li>
              
               <li class="article-tag-list-item">
